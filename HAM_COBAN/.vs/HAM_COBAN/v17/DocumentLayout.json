@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GiaKhiem\\Offline\\HAM\\HAM_COBAN\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB89F6C2-E22F-49C8-AFBF-DA1815FA8570}|HAM_COBAN.vcxproj|D:\\GiaKhiem\\Offline\\HAM\\HAM_COBAN\\HAM_COBAN.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FB89F6C2-E22F-49C8-AFBF-DA1815FA8570}|HAM_COBAN.vcxproj|solutionrelative:HAM_COBAN.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HAM_COBAN.cpp",
+              "DocumentMoniker": "D:\\GiaKhiem\\Offline\\HAM\\HAM_COBAN\\HAM_COBAN.cpp",
+              "RelativeDocumentMoniker": "HAM_COBAN.cpp",
+              "ToolTip": "D:\\GiaKhiem\\Offline\\HAM\\HAM_COBAN\\HAM_COBAN.cpp",
+              "RelativeToolTip": "HAM_COBAN.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-13T04:05:37.087Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

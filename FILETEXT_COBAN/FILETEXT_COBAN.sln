@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FILETEXT_COBAN", "FILETEXT_COBAN.vcxproj", "{CBA76C0B-C2EB-4CF8-8517-FB8199C49916}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBA76C0B-C2EB-4CF8-8517-FB8199C49916}.Debug|x64.ActiveCfg = Debug|x64
+		{CBA76C0B-C2EB-4CF8-8517-FB8199C49916}.Debug|x64.Build.0 = Debug|x64
+		{CBA76C0B-C2EB-4CF8-8517-FB8199C49916}.Debug|x86.ActiveCfg = Debug|Win32
+		{CBA76C0B-C2EB-4CF8-8517-FB8199C49916}.Debug|x86.Build.0 = Debug|Win32
+		{CBA76C0B-C2EB-4CF8-8517-FB8199C49916}.Release|x64.ActiveCfg = Release|x64
+		{CBA76C0B-C2EB-4CF8-8517-FB8199C49916}.Release|x64.Build.0 = Release|x64
+		{CBA76C0B-C2EB-4CF8-8517-FB8199C49916}.Release|x86.ActiveCfg = Release|Win32
+		{CBA76C0B-C2EB-4CF8-8517-FB8199C49916}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3890EBBA-3B33-4E69-95B9-A4F6B95DD450}
+	EndGlobalSection
+EndGlobal

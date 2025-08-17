@@ -1,0 +1,4 @@
+﻿  CAUTRUC_COBAN.cpp
+D:\IT\Code\code_C++\CAUTRUC_COBAN\CAUTRUC_BAI1\CAUTRUC_COBAN.cpp(58,31): warning C4101: 'tam1': unreferenced local variable
+D:\IT\Code\code_C++\CAUTRUC_COBAN\CAUTRUC_BAI1\CAUTRUC_COBAN.cpp(58,22): warning C4101: 'tam': unreferenced local variable
+  CAUTRUC_COBAN.vcxproj -> D:\IT\Code\code_C++\CAUTRUC_COBAN\CAUTRUC_BAI1\x64\Debug\CAUTRUC_COBAN.exe

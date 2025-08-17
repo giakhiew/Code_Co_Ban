@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\IT\\Code\\code_C\u002B\u002B\\CAUTRUC_COBAN\\CAUTRUC_BAI1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8D9B6D1-CFB6-4EB1-85C3-86FE05ED2A27}|CAUTRUC_COBAN.vcxproj|D:\\IT\\Code\\code_C\u002B\u002B\\CAUTRUC_COBAN\\CAUTRUC_BAI1\\CAUTRUC_COBAN.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E8D9B6D1-CFB6-4EB1-85C3-86FE05ED2A27}|CAUTRUC_COBAN.vcxproj|solutionrelative:CAUTRUC_COBAN.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CAUTRUC_COBAN.cpp",
+              "DocumentMoniker": "D:\\IT\\Code\\code_C\u002B\u002B\\CAUTRUC_COBAN\\CAUTRUC_BAI1\\CAUTRUC_COBAN.cpp",
+              "RelativeDocumentMoniker": "CAUTRUC_COBAN.cpp",
+              "ToolTip": "D:\\IT\\Code\\code_C\u002B\u002B\\CAUTRUC_COBAN\\CAUTRUC_BAI1\\CAUTRUC_COBAN.cpp",
+              "RelativeToolTip": "CAUTRUC_COBAN.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-10T11:19:44.018Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

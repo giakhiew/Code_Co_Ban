@@ -120,14 +120,41 @@ void black_jack(int n, int m, vector<int> arr) {
     cout << maxtam;
 }
 
+int day_2_sum(int n, vector<int> arr) {
+    int dodai, sumtam = 0;
+    vector<int> sum;
+    for (int i = 0; i < n; i++) { //tinh mang sum
+        sumtam += arr[i];
+        sum.push_back(sumtam);
+    }
+
+    for (int dodai = n; dodai >= 2; dodai--) {
+        for (int tam = n - 1; tam >= dodai-1; tam--) {
+            int j = tam, i = j - dodai + 1, sumlr, k = i, s1 = arr[i], s2 = arr[j] + arr[i + 1];
+            if (i == 0) sumlr = sum[j];
+            else sumlr = sum[j] - sum[i - 1];
+            
+            
+            if (sumlr % 2 != 0) continue;
+            int S = sumlr / 2;
+            while (s1 > s2){
+                k++;
+                s1 = arr[i] + arr[k];
+            }
+            
+        }
+    }
+    return 0;
+}
+
 int main()
 {   //2,6,9,4,6,5,5,8,9
-    vector<int> v1 = { 1,1,3,3,3,5,5 };
+    vector<int> v1 = { 2,10,3,2,5,1 };
     vector<int> v2 = { 1,3,3,4,5,5,5,8 };
     vector<int> v3 = {7,9,6,2,1,5 };
     int n = v1.size();
     int m = v2.size();
-    black_jack(v3.size(), 20, v3);
+    day_2_sum(6, v1);
 
      
     return 0;

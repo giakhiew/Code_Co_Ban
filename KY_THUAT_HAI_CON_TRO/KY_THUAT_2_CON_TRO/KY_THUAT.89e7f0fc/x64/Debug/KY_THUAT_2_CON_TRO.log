@@ -1,5 +1,5 @@
 ﻿  KY_THUAT_2_CON_TRO.cpp
-D:\GiaKhiem\Code_Co_Ban\HAI_CON_TRO\KY_THUAT_2_CON_TRO\KY_THUAT_2_CON_TRO.cpp(132,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\GiaKhiem\Code_Co_Ban\HAI_CON_TRO\KY_THUAT_2_CON_TRO\KY_THUAT_2_CON_TRO.cpp(133,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\GiaKhiem\Code_Co_Ban\HAI_CON_TRO\KY_THUAT_2_CON_TRO\KY_THUAT_2_CON_TRO.cpp(134,23): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  KY_THUAT_2_CON_TRO.vcxproj -> D:\GiaKhiem\Code_Co_Ban\HAI_CON_TRO\KY_THUAT_2_CON_TRO\x64\Debug\KY_THUAT_2_CON_TRO.exe
+D:\GiaKhiem\Code_Co_Ban\KY_THUAT_HAI_CON_TRO\KY_THUAT_2_CON_TRO\KY_THUAT_2_CON_TRO.cpp(124,9): warning C4101: 'dodai': unreferenced local variable
+D:\GiaKhiem\Code_Co_Ban\KY_THUAT_HAI_CON_TRO\KY_THUAT_2_CON_TRO\KY_THUAT_2_CON_TRO.cpp(146,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\GiaKhiem\Code_Co_Ban\KY_THUAT_HAI_CON_TRO\KY_THUAT_2_CON_TRO\KY_THUAT_2_CON_TRO.cpp(147,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  KY_THUAT_2_CON_TRO.vcxproj -> D:\GiaKhiem\Code_Co_Ban\KY_THUAT_HAI_CON_TRO\KY_THUAT_2_CON_TRO\x64\Debug\KY_THUAT_2_CON_TRO.exe

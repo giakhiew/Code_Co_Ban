@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GiaKhiem\\Code_Co_Ban\\HAI_CON_TRO\\KY_THUAT_2_CON_TRO\\",
+  "WorkspaceRootPath": "D:\\GiaKhiem\\Code_Co_Ban\\KY_THUAT_HAI_CON_TRO\\KY_THUAT_2_CON_TRO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89E7F0FC-CC96-44C8-987F-C872AFA0EFEB}|KY_THUAT_2_CON_TRO.vcxproj|D:\\GiaKhiem\\Code_Co_Ban\\HAI_CON_TRO\\KY_THUAT_2_CON_TRO\\KY_THUAT_2_CON_TRO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{89E7F0FC-CC96-44C8-987F-C872AFA0EFEB}|KY_THUAT_2_CON_TRO.vcxproj|D:\\GiaKhiem\\Code_Co_Ban\\KY_THUAT_HAI_CON_TRO\\KY_THUAT_2_CON_TRO\\KY_THUAT_2_CON_TRO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{89E7F0FC-CC96-44C8-987F-C872AFA0EFEB}|KY_THUAT_2_CON_TRO.vcxproj|solutionrelative:KY_THUAT_2_CON_TRO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "KY_THUAT_2_CON_TRO.cpp",
-              "DocumentMoniker": "D:\\GiaKhiem\\Code_Co_Ban\\HAI_CON_TRO\\KY_THUAT_2_CON_TRO\\KY_THUAT_2_CON_TRO.cpp",
+              "DocumentMoniker": "D:\\GiaKhiem\\Code_Co_Ban\\KY_THUAT_HAI_CON_TRO\\KY_THUAT_2_CON_TRO\\KY_THUAT_2_CON_TRO.cpp",
               "RelativeDocumentMoniker": "KY_THUAT_2_CON_TRO.cpp",
-              "ToolTip": "D:\\GiaKhiem\\Code_Co_Ban\\HAI_CON_TRO\\KY_THUAT_2_CON_TRO\\KY_THUAT_2_CON_TRO.cpp",
+              "ToolTip": "D:\\GiaKhiem\\Code_Co_Ban\\KY_THUAT_HAI_CON_TRO\\KY_THUAT_2_CON_TRO\\KY_THUAT_2_CON_TRO.cpp",
               "RelativeToolTip": "KY_THUAT_2_CON_TRO.cpp",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAAAGcAAAAAAAAA",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAcwI0AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-31T03:20:14.777Z",
               "EditorCaption": ""

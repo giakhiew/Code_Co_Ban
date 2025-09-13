@@ -147,15 +147,75 @@ int day_2_sum(int n, vector<int> arr) {
     return 0;
 }
 
+void tim_cap_so(int n, int x, vector<int> arr) {
+    sort(arr.begin(), arr.end());
+    
+    bool check = false;
+    int size = arr.size() - 1, i = 0, j = size;
+    while (i < j) {
+            int tam = 0;
+            tam = arr[i] + arr[j];
+            if (tam == x) {
+                check = true;
+                break;
+            } 
+            if (tam > x) {
+                j--;
+            }
+            if (tam < x) {
+                i++;
+            }
+        }
+
+    if (check == true) cout << i + 1<< " " << j + 1;
+    else cout << "No solution";
+}
+
+void day_ko_vuot_qua_x(int n, long long x, vector <long long> arr) {
+
+    int i = 0, j = 0, size = 0, sum = arr[i], maxtam = 0; 
+
+    while (sum <= x) {
+        j++;
+        sum += arr[j];
+        size++;
+        if (sum > x) {
+            i++;
+            j = i;
+            maxtam = max(size, maxtam);
+            size = 0;
+            sum = arr[i];
+        }
+    }
+    
+    cout << maxtam;
+}
+
+void tich_x_y(int p) {
+    int i = 1, j = 1, sum = i * j;
+    while (sum < p) {
+        j++;
+        sum *= j;
+        if (sum == p) {
+            break;
+        }
+        if (sum > p) {
+            i++;
+            j = i + 1;
+            sum = i * j;
+        }
+    }
+    cout << i << j;
+}
+
 int main()
 {   //2,6,9,4,6,5,5,8,9
-    vector<int> v1 = { 2,10,3,2,5,1 };
+    vector<long long> v1 = { 2,3,5,7,9,12 };
     vector<int> v2 = { 1,3,3,4,5,5,5,8 };
     vector<int> v3 = {7,9,6,2,1,5 };
     int n = v1.size();
     int m = v2.size();
-    day_2_sum(6, v1);
-
+    tich_x_y(60);
      
     return 0;
 }

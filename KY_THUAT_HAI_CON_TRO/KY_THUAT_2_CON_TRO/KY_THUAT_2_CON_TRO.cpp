@@ -120,33 +120,6 @@ void black_jack(int n, int m, vector<int> arr) {
     cout << maxtam;
 }
 
-int day_2_sum(int n, vector<int> arr) {
-    int dodai, sumtam = 0;
-    vector<int> sum;
-    for (int i = 0; i < n; i++) { //tinh mang sum
-        sumtam += arr[i];
-        sum.push_back(sumtam);
-    }
-
-    for (int dodai = n; dodai >= 2; dodai--) {
-        for (int tam = n - 1; tam >= dodai-1; tam--) {
-            int j = tam, i = j - dodai + 1, sumlr, k = i, s1 = arr[i], s2 = arr[j] + arr[i + 1];
-            if (i == 0) sumlr = sum[j];
-            else sumlr = sum[j] - sum[i - 1];
-            
-            
-            if (sumlr % 2 != 0) continue;
-            int S = sumlr / 2;
-            while (s1 > s2){
-                k++;
-                s1 = arr[i] + arr[k];
-            }
-            
-        }
-    }
-    return 0;
-}
-
 void tim_cap_so(int n, int x, vector<int> arr) {
     sort(arr.begin(), arr.end());
     
@@ -192,10 +165,10 @@ void day_ko_vuot_qua_x(int n, long long x, vector <long long> arr) {
 }
 
 void tich_x_y(int p) {
-    int i = 1, j = 1, sum = i * j;
+    int i = 1, j = p, sum = i * j;
     while (sum < p) {
-        j++;
-        sum *= j;
+        j--;
+        sum /= j;
         if (sum == p) {
             break;
         }
@@ -205,17 +178,49 @@ void tich_x_y(int p) {
             sum = i * j;
         }
     }
-    cout << i << j;
+    cout << i << " " << j;
+}
+
+int day_2_sum(int n, vector<int> arr) {
+    int dodai,sumtam = 0;
+    vector<int> sum;
+    for (int i = 0; i < n; i++) { //tinh mang sum
+        sumtam += arr[i];
+        sum.push_back(sumtam);
+    }
+
+    for (dodai = n; dodai >= 2; dodai--) {
+        for (int tam = n - 1; tam >= dodai - 1; tam--) {
+            int j = tam, i = j - dodai + 1, sumlr, k = i;
+
+            if (i == 0) sumlr = sum[j];
+            else sumlr = sum[j] - sum[i - 1];
+
+            if (sumlr % 2 != 0) continue;
+
+            int s1 = arr[i], s2 = sum[j] - sum[i];
+            if (s1 == s2) return dodai;
+
+            while (k < j && s1 > s2) {
+                k++;
+                s1 += arr[k];
+                s2 -= arr[k];
+                if (s1 == s2) return dodai;
+            }
+        }
+
+    }
+    return 0;
 }
 
 int main()
 {   //2,6,9,4,6,5,5,8,9
-    vector<long long> v1 = { 2,3,5,7,9,12 };
+    vector<int> v1 = { 2,10,2,2,5,1 };
     vector<int> v2 = { 1,3,3,4,5,5,5,8 };
     vector<int> v3 = {7,9,6,2,1,5 };
     int n = v1.size();
     int m = v2.size();
-    tich_x_y(60);
-     
+    int check = day_2_sum(v1.size(), v1);
+    cout << check;
     return 0;
 }

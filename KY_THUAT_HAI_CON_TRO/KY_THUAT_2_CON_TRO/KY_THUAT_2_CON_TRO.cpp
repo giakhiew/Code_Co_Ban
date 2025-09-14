@@ -164,23 +164,6 @@ void day_ko_vuot_qua_x(int n, long long x, vector <long long> arr) {
     cout << maxtam;
 }
 
-void tich_x_y(int p) {
-    int i = 1, j = p, sum = i * j;
-    while (sum < p) {
-        j--;
-        sum /= j;
-        if (sum == p) {
-            break;
-        }
-        if (sum > p) {
-            i++;
-            j = i + 1;
-            sum = i * j;
-        }
-    }
-    cout << i << " " << j;
-}
-
 int day_2_sum(int n, vector<int> arr) {
     int dodai,sumtam = 0;
     vector<int> sum;
@@ -213,6 +196,23 @@ int day_2_sum(int n, vector<int> arr) {
     return 0;
 }
 
+void tich_x_y(int p) {
+    int i = 1, j = i, product = i * j;
+    while (product < p) {
+        j++;
+        product *= j;
+        if (product == p) {
+            break;
+        }
+        if (product > p) {
+            i++;
+            j = i + 1;
+            product = i * j;
+        }
+    }
+    cout << i << " " << j;
+}
+
 int main()
 {   //2,6,9,4,6,5,5,8,9
     vector<int> v1 = { 2,10,2,2,5,1 };
@@ -221,6 +221,11 @@ int main()
     int n = v1.size();
     int m = v2.size();
     int check = day_2_sum(v1.size(), v1);
-    cout << check;
+    /*cout << check;*/
+    long long tam = 1;
+    for (int i = 8; i < 50; i++) {
+        tam *= i;
+    }
+    cout << tam;
     return 0;
 }

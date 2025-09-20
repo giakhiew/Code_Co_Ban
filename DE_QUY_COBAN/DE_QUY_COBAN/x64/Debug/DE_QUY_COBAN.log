@@ -1,0 +1,3 @@
+﻿  DE_QUY_COBAN.cpp
+D:\GiaKhiem\Code_Co_Ban\DE_QUY_COBAN\DE_QUY_COBAN.cpp(39,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  DE_QUY_COBAN.vcxproj -> D:\GiaKhiem\Code_Co_Ban\DE_QUY_COBAN\x64\Debug\DE_QUY_COBAN.exe

@@ -23,6 +23,17 @@ int Fibonacci(int n) {
     return Fibonacci(n - 1) + Fibonacci(n - 2);
 }
 
+int tong_chu_so(int n) {
+    if (n == 0) return 0;
+    return tong_chu_so(n / 10) + n % 10;
+}
+
+string dao_chuoi(string s) {
+    int size = s.size(); 
+	if (size == 0) return "";
+    return s[size - 1] + dao_chuoi(s.substr(0, size - 1)) ;
+}
+
 int GCD(int a, int b) {
     int du = a % b;
     if (du == 0) return a/b;
@@ -34,14 +45,9 @@ int LCM(int a, int b) {
     return tu / check;
 }
 
-int tong_chu_so(int n) {
-    
-    return tong_chu_so(n);
-}
-
 int main()
 {
-    int check = tong_chu_so(12345);
+    auto check = dao_chuoi("hell");
     cout << check;
     return 0;
 }

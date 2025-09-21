@@ -100,6 +100,7 @@ void binary_search_first_last(vector<int> arr, int l, int r, int x) {
     if (l > r) return;
     int m = floor(l + r) / 2.0;
     int first = -1, last = -1;
+
     if (arr[m] == x) {
         int taml = m, tamr = m;
         while (arr[taml] == x) {
@@ -112,6 +113,7 @@ void binary_search_first_last(vector<int> arr, int l, int r, int x) {
         }
         cout << first << " " << last;
     }
+
     else if (arr[m] < x) return binary_search_first_last(arr, m + 1, r, x);
     else return binary_search_first_last(arr, l, m - 1, x);
 }

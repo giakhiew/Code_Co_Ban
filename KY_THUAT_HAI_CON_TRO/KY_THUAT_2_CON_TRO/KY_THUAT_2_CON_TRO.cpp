@@ -89,9 +89,41 @@ void doan_con_co_tong_nho(int n, int s, vector<int> arr) {
     cout << maxtam;
 }
 
-void doan_con_co_tong_lon(int n, int s, vector<int> arr) {
-
+void doan_tong_lon_hon_bang_s(int n, int s, vector<int> arr) {
+    int minsize = arr.size(), i = 0, j = 1, sum = arr[i], mintam = 1, size = arr.size();
+    while (i < j && i < size && j < size) {
+        if (sum + arr[j] < s) {
+            sum += arr[j];
+            j++;
+            mintam++;
+        }
+        else {
+            i++; j = i + 1; mintam++;
+            sum = arr[i];
+            minsize = min(minsize, mintam);
+            mintam = 1;
+        }
+    }
+    cout << minsize;
 }
+
+void so_luong_doan_tong_nho_hon_s(int n, int s, vector<int> arr) {
+    int i = 0, j = 1, sum = arr[i], sumlength = arr.size(), size = arr.size();
+    while (i < j && i < size && j < size) {
+        if (sum + arr[j] < s) {
+            sum += arr[j];
+            j++;
+            sumlength++;
+        }
+        else {
+            i++; j = i + 1;
+            sum = arr[i];
+        }
+    }
+    cout << sumlength;
+}
+
+
 
 void black_jack(int n, int m, vector<int> arr) {
     sort(arr.begin(), arr.end());
@@ -215,6 +247,7 @@ void tich_x_y(int p) {
 
 int main()
 {   //2,6,9,4,6,5,5,8,9
+    
     vector<int> v1 = { 2,10,2,2,5,1 };
     vector<int> v2 = { 1,3,3,4,5,5,5,8 };
     vector<int> v3 = {7,9,6,2,1,5 };

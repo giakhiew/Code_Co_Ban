@@ -123,6 +123,26 @@ void so_luong_doan_tong_nho_hon_s(int n, int s, vector<int> arr) {
     cout << sumlength;
 }
 
+void so_luong_doan_tong_lon_hon_s(int n, int s, vector<int> arr) {
+    int i = 0, j = 1, sum = arr[i], sumlength = 0, size = arr.size();
+    while (i < j && i < size && j < size) {
+        if (sum + arr[j] < s) {
+            sum += arr[j];
+            j++;
+        }
+        else {
+            sum += arr[j];
+            j++;
+            sumlength++;
+        }
+        if (j == size && i < size) {
+            i++; j = i + 1;
+            sum = arr[i];
+        }
+    }
+    cout << sumlength;
+}
+
 
 
 void black_jack(int n, int m, vector<int> arr) {
@@ -245,20 +265,56 @@ void tich_x_y(int p) {
     cout << i << " " << j;
 }
 
+void doan_con_voi_tap_nho(int n, int s, vector<int> arr) {
+    int i = 0, j = 1, size = arr.size(), total = size;
+    vector<int> vtam = { arr[i] };
+    while (i < j && i < size && j < size) {
+        int sizetam = vtam.size();
+        if (sizetam < 3) {
+            vtam.push_back(arr[j]);
+            total++;
+            j++;
+        }
+        else {
+            for (int k = 0; k < size; k++) {
+                if (arr[j] == vtam[k]) {
+                    total++;
+                    k = -1;
+                    if (j < size - 1) j++;
+                    else {
+                        i++;
+                        vtam = { arr[i] };
+                        j = i + 1;
+                        break;
+                    }
+                }
+                else {
+                    i++;
+                    vtam = { arr[i] };
+                    j = i + 1;
+                    break;
+                }
+            }
+        }
+        if (i < size && j == size) {
+            i++;
+            vtam = { arr[i] };
+            j = i + 1;
+        }
+    }
+    cout << total;
+}
+
 int main()
 {   //2,6,9,4,6,5,5,8,9
     
-    vector<int> v1 = { 2,10,2,2,5,1 };
+    vector<int> v1 = { 2, 6 ,4 ,3 ,6, 8, 3 };
     vector<int> v2 = { 1,3,3,4,5,5,5,8 };
     vector<int> v3 = {7,9,6,2,1,5 };
     int n = v1.size();
     int m = v2.size();
     int check = day_2_sum(v1.size(), v1);
     /*cout << check;*/
-    long long tam = 1;
-    for (int i = 8; i < 50; i++) {
-        tam *= i;
-    }
-    cout << tam;
+    doan_con_voi_tap_nho(v1.size(), 3, v1);
     return 0;
 }
